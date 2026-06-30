@@ -1,1 +1,1 @@
-# web-dev-assignment
+# minigame-hub-website
