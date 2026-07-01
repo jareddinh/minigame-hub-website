@@ -56,9 +56,6 @@ The application is optimised for:
 
 ## Credits & References
 All assets used were sourced from free icon libraries and image repositories (e.g. Flaticon, Icons8, Vecteezy).
-- Discord logo PNG from pngimg.com
-- Icons from Flaticon and Icons8
-- Additional assets from Vecteezy
 
 ---
 
