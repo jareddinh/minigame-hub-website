@@ -1,0 +1,64 @@
+/* Number Range */
+#current-min, #current-max {
+    color: #FF6E6E;
+    font-weight: bold;
+}
+
+/* Player Stats */
+.player-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Guess Form Layout */
+#guess-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+    font-size: 1.5rem;
+}
+
+/* Guess Form Styling */
+.game-container form input, .game-container input textarea {
+    width: 20%;
+    padding: 15px;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    background: #1F2937;
+    color: white;
+
+    font-size: 1.1rem;
+    font-family: inherit;
+}
+
+/* Tablet Sizes */
+
+@media only screen and (min-width: 600px) {
+    /* Larger Guess Form */
+    #guess-form form input {
+        width: 30%;
+    }
+
+    .game-container p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Desktop + Laptop Sizes */
+
+@media only screen and (min-width: 1000px) {
+    /* Guess Form  */
+    .game-container form input, input textarea {
+        width: 10%;
+    }
+
+    /* Limit space between stats */
+    .player-stats {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

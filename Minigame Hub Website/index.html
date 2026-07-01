@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Minigame Hub</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- Navigation Bar-->
+            <nav class="navbar">
+                <a href="index.html"><img src="images/logo.png" alt="MinigameHub Logo"></a>
+
+                <!-- Navbar Links -->
+                <div class="nav-links">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="games.html">Games</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <!-- Search Bar -->
+                <form class="search-container">
+                    <label for="search-input" hidden>Search games</label>
+                    <input type="text" id="search-input" placeholder="🔍︎ Search games...">
+                    
+                    <ul id="search-results"></ul>
+                </form>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Discover Amazing</h1>
+                <h1>Mini Games</h1>
+
+                <p>Explore our collection of fun, quick-to-play games.</p>
+
+                <a class="hero-btn" href="games.html">Browse All Games</a>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Copyright -->
+            <small id="copyright">Minigame Hub &copy; 2026. Built by Jared Dinh</small>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Minigame Hub | Tic Tac Toe</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/tic-tac-toe.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <a href="index.html"><img src="images/logo.png" alt="MinigameHub Logo"></a>
+
+                <!-- Navbar Links -->
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="games.html">Games</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <!-- Search Bar -->
+                <form class="search-container">
+                    <label for="search-input" hidden>Search games</label>
+                    <input type="text" id="search-input" placeholder="🔍︎ Search games...">
+                    
+                    <ul id="search-results"></ul>
+                </form>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Breadcrumbs -->
+            <nav>
+                <a href="games.html">← Back to Games</a>
+            </nav>
+
+            <article class="game-page">
+                <!-- Title and How to Play -->
+                <h1 class="title">Tic Tac Toe</h1>
+
+                <section class="how-to-play">
+                    <h2>How to Play &#9432;</h2>
+                    <p>Be the first player to get 3 symbols in a continuous line. Click an empty square to place your symbol.</p>
+                </section>
+
+                <hr>
+
+                <div class="game-container">
+                    <!-- Game Board -->
+                    <div id="board" class="board">
+                        <div class="cell" id="0"></div>
+                        <div class="cell" id="1"></div>
+                        <div class="cell" id="2"></div>
+                        <div class="cell" id="3"></div>
+                        <div class="cell" id="4"></div>
+                        <div class="cell" id="5"></div>
+                        <div class="cell" id="6"></div>
+                        <div class="cell" id="7"></div>
+                        <div class="cell" id="8"></div>
+                    </div>
+
+                    <!-- Current Player and Stats -->
+                    <div class="game-state">
+                        <p> <!-- Current Player Turn -->
+                            Current Player: <span id="current-player" class="o-symbol">O</span>
+                        </p>
+
+                        <p id="game-over-message"></p>
+
+                        <!-- Player Statistics -->
+                        <aside class="player-stats">
+                            <p> <!-- Player O Wins -->
+                                <span class="o-symbol">O</span> 
+                                <strong>Wins: </strong><span id="o-count">0</span>
+                            </p>
+                            <p> <!-- Player X Wins -->
+                                <span class="x-symbol">X</span> 
+                                <strong>Wins: </strong><span id="x-count">0</span>
+                            </p>
+                            <p> <!-- Draws -->
+                                <strong>Draws: </strong><span id="draws-count">0</span>
+                            </p>
+                        </aside>
+                    </div>
+
+                    <!-- Restart Game and Reset Score Buttons -->
+                    <div class="game-controls">
+                        <button id="restart-game-button">▶︎ New Game</button>
+                        <button id="reset-score-button">↻ Reset Score</button>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <!-- Copyright -->
+            <small id="copyright">Minigame Hub &copy; 2026. Built by Jared Dinh</small>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/tic-tac-toe.js"></script>
+    </body>
+</html>

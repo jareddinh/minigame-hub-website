@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Minigame Hub | Scissors Paper Rock</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/scissors-paper-rock.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <a href="index.html"><img src="images/logo.png" alt="MinigameHub Logo"></a>
+                
+                <!-- Navbar Links -->
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="games.html">Games</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <!-- Search Bar -->
+                <form class="search-container">
+                    <label for="search-input" hidden>Search games</label>
+                    <input type="text" id="search-input" placeholder="🔍︎ Search games...">
+                    
+                    <ul id="search-results"></ul>
+                </form>
+            </nav>
+        </header>
+        
+        <main>
+            <!-- Breadcrumbs -->
+            <nav>
+                <a href="games.html">← Back to Games</a>
+            </nav>
+
+            <article>
+                <!-- Title and How to Play -->
+                <h1 class="title">Scissors Paper Rock</h1>
+                
+                <section class="how-to-play">    
+                    <h2>How to Play &#9432;</h2>
+                    <p>Pick one of the three options and see if it beats the computer's choice.</p>
+                    <p>Scissors beats Paper. Paper beats Rock. Rock beats Scissors.</p>
+                    <p>If you and the computer choose the same option, it is a draw.</p>
+                </section>
+
+                <hr>
+
+                <div class="game-container">
+                    <!-- Options -->
+                    <div class="choice">
+                        <p><strong>Choose:</strong></p>
+                        <div id="choice-buttons">
+                            <button id="scissors">✂️ Scissors</button>
+                            <button id="paper">📃 Paper</button>
+                            <button id="rock">🪨 Rock</button>
+                        </div>
+                    </div>
+
+                    <!-- Player and Computer Choices -->
+                    <div id="result">
+                        <div class="player-side"> <!-- Player -->
+                            <p><strong>You Chose:</strong></p>
+                            <div id="player-choice"></div>
+                        </div>
+                        
+                        <div class="divider"></div>
+
+                        <div class="computer-side"> <!-- Computer -->
+                            <p><strong>CPU Chose:</strong></p>
+                            <div id="computer-choice"></div>
+                        </div>
+                    </div>
+
+                    <p id="result-message"></p>
+                    
+                    <!-- Game Statistics -->
+                    <aside class="player-stats">
+                        <p> <!-- Player Wins -->
+                            <strong>Player Wins:</strong> <span id="player-wins-count">0</span>
+                        </p>
+                        <p> <!-- CPU Wins -->
+                            <strong>CPU Wins:</strong> <span id="computer-wins-count">0</span>
+                        </p>
+                        <p> <!-- Draws -->
+                            <strong>Draws:</strong> <span id="draws-count">0</span>
+                        </p>
+                    </aside>
+
+                    <!-- Restart Game and Reset Score Buttons -->
+                    <div class="game-controls">
+                        <button id="restart-game-button">▶︎ New Game</button>
+                        <button id="reset-score-button">↻ Reset Score</button>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <!-- Copyright -->
+            <small id="copyright">Minigame Hub &copy; 2026. Built by Jared Dinh</small>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/scissors-paper-rock.js"></script>
+    </body>
+</html>

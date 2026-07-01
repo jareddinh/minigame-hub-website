@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Minigame Hub | Games</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <a href="index.html"><img src="images/logo.png" alt="MinigameHub Logo"></a>
+                
+                <!-- Navbar Links -->
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a class="active" href="games.html">Games</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <!-- Search Bar -->
+                <form class="search-container">
+                    <label for="search-input" hidden>Search games</label>
+                    <input type="text" id="search-input" placeholder="🔍︎ Search games...">
+                    
+                    <ul id="search-results"></ul>
+                </form>
+            </nav>
+        </header>
+        
+        <main>
+            <section>
+                <h1 class="title">Games</h1>
+                
+                <!-- List each game as a card -->
+                <ul class="games-grid">
+                    <li> <!-- Tic Tac Toe -->
+                        <a href="tic-tac-toe.html" class="games-card">
+                            <img src="images/tic-tac-toe.png" alt="Tic Tac Toe" class="thumbnail">
+
+                    
+                            <h2>Tic Tac Toe</h2>
+                            <p><img src="images/person.png" alt="Player Count"> 2 Player</p>
+                        </a>    
+                    </li>
+
+                    <li> <!-- Memory Game -->
+                        <a href="memory-game.html" class="games-card">
+                            <img src="images/memory-game.png" alt="Tic Tac Toe" class="thumbnail">
+
+                        
+                            <h2>Memory Game</h2>
+                            <p><img src="images/person.png" alt="Player Count"> 1 Player</p>
+                        </a>      
+                    </li>
+
+                    <li> <!-- Guess the Number -->
+                        <a href="guess-the-number.html" class="games-card">
+                            <img src="images/guess-the-number.png" alt="Tic Tac Toe" class="thumbnail">
+
+                        
+                            <h2>Guess the Number</h2>
+                            <p><img src="images/person.png" alt="Player Count"> 1 Player</p>
+                        </a>  
+                    </li>    
+
+                    <li> <!-- Scissors Paper Rock -->
+                        <a href="scissors-paper-rock.html" class="games-card">
+                            <img src="images/scissors-paper-rock.png" alt="Tic Tac Toe" class="thumbnail">
+
+                        
+                            <h2>Scissors Paper Rock</h2>
+                            <p><img src="images/person.png" alt="Player Count"> 1 Player</p>
+                        </a>      
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Copyright -->
+            <small id="copyright">Minigame Hub &copy; 2026. Built by Jared Dinh</small>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

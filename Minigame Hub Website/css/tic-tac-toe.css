@@ -1,0 +1,119 @@
+/* Tic Tac Toe Board */
+.board {
+    /* 3x3 Grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    /* Space between cells */
+    gap: 5px;
+
+    /* Centers board horizontally */
+    margin: 0 auto;
+
+    /* Board width fit content exactly */
+    width: fit-content;
+
+    background-color: #666666;
+    border: 5px 5px;
+    margin-bottom: 50px;
+}
+
+/* Board Cells */
+.cell {
+    /* Cell Size */
+    width: 50px;
+    height: 50px;
+
+    /* Centers Symbols */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    background-color: #1F2937;
+    opacity: 100%;
+}
+
+/* Cell Hover (Not a Winning Cell) */
+.cell:hover:not(.winning-cell-o, .winning-cell-x) { 
+    background-color: #111827; 
+}
+
+/* Player Stats */
+.player-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 20px;
+    text-align: center;
+}
+
+/* O Symbol */
+.o-symbol {
+    color: #00F0FF;
+    font-weight: bold;
+}
+
+/* X Symbol */
+.x-symbol {
+    color: #FF6E6E;
+    font-weight: bold;
+}
+
+/* Winning Cells Glowing Effect */
+.winning-cell-o {
+    text-shadow: 0 0 10px #00F0FF;
+    background-color: rgba(0, 240, 255, 0.15);
+    transition: background-color 0.5s ease;
+}
+
+.winning-cell-x {
+    text-shadow: 0 0 10px #FF6E6E;
+    background-color: rgba(255, 110, 110, 0.15);
+    transition: background-color 0.5s ease;
+}
+
+#game-over-message {
+    font-size: 25px;
+}
+
+/* Tablet Size */
+
+@media only screen and (min-width: 600px) {
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    #game-over-message {
+        font-size: 35px;
+    }
+
+    .player-stats {
+        gap: 50px;
+    }
+}
+
+/* Desktop + Laptop Size */
+
+@media only screen and (min-width: 1000px) {
+    .cell {
+        width: 120px;
+        height: 120px;
+        font-size: 5.5rem;
+    }
+
+    #game-over-message {
+        font-size: 40px;
+    }
+}
